@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'trader',
+    'material_pricing'
+
+
 
     'rewards',
     'payment',
@@ -48,6 +52,7 @@ INSTALLED_APPS = [
     'points',
     'recyclers',
     'product',
+
 
 
 ]
