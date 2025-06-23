@@ -6,8 +6,8 @@ from pickup_confirmation.models import Confirmation
 
 class Points(models.Model):
     points_id = models.CharField(max_length = 10, primary_key = True)
-    trader_id = models.ForeignKey(Trader,to_field = 'trader_id', unique = True, on_delete = models.CASCADE)
-    confirmation_id = models.ForeignKey(Confirmation,to_field = 'confirmation_id', unique = True, on_delete = models.CASCADE)
+    trader_id = models.ForeignKey(Trader, on_delete = models.CASCADE)
+    confirmation_id = models.ForeignKey(Confirmation,on_delete = models.CASCADE)
     points = models.IntegerField()
     points_at = models.DateTimeField(auto_now_add = True)
 

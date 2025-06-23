@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'trader',
-    'material_pricing'
+    'material_pricing',
 
 
 
