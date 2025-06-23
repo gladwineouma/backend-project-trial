@@ -9,10 +9,10 @@ from trader.models import Trader
 # Create your models here.
 class Confirmation(models.Model):
     confirmation_id = models.CharField(max_length = 10, primary_key=True)
-    request = models.ForeignKey(Request,to_field = 'request_id', unique = True, on_delete = models.CASCADE)
-    material = models.ForeignKey(Material,to_field = 'material_id', unique = True, on_delete = models.CASCADE)
-    recycler = models.ForeignKey(Recyclers,to_field = 'recycler_id', unique = True, on_delete = models.CASCADE)
-    trader = models.ForeignKey(Trader,to_field = 'trader_id', unique = True, on_delete = models.CASCADE)
+    request = models.ForeignKey(Request,to_field = 'request_id',on_delete = models.CASCADE)
+    material = models.ForeignKey(Material,to_field = 'material_id',on_delete = models.CASCADE)
+    recycler = models.ForeignKey(Recyclers,to_field = 'recycler_id', on_delete = models.CASCADE)
+    trader = models.ForeignKey(Trader,to_field = 'trader_id', on_delete = models.CASCADE)
     name = models.CharField(max_length = 50)
     phone_number = models.IntegerField(unique = True)
     location = models.CharField(max_length = 50)
