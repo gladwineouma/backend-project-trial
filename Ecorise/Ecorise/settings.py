@@ -37,8 +37,24 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'trader',
     'material_pricing'
+
+
+
+    'rewards',
+    'payment',
+
+    'pickup',
+    'pickup_confirmation',
+    'feedback',
+    'points',
+    'recyclers',
+    'product',
+
+
+
 ]
 
 MIDDLEWARE = [
